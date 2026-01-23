@@ -72,7 +72,7 @@ Python的常见的数据类型：
     结果：WWenuyyubo
     ```
     字符串的索引值以 0 为开始值，-1 为从末尾的开始位置。  
-    [![字符串索引示意图](https://s41.ax1x.com/2026/01/23/pZg8G7D.png)](https://imgchr.com/i/pZg8G7D)
+    [![字符串索引示意图](https://s41.ax1x.com/2026/01/23/pZg8G7D.png)](https://imgchr.com/i/pZg8G7D)  
     加号 + 是字符串的连接符， 星号 * 表示复制当前字符串，与之结合的数字为复制的次数。
     - 字符串创建：`str = "Hello, world!"`
     - 字符串索引：`str[0]`代表 `str` 的第一个字符，  
