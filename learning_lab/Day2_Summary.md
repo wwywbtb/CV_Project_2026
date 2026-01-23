@@ -72,7 +72,7 @@ Python的常见的数据类型：
     结果：WWenuyyubo
     ```
     字符串的索引值以 0 为开始值，-1 为从末尾的开始位置。  
-    ![字符串索引示意图](./images/string_index.png)
+    [![字符串索引示意图](https://s41.ax1x.com/2026/01/23/pZg8G7D.png)](https://imgchr.com/i/pZg8G7D)
     加号 + 是字符串的连接符， 星号 * 表示复制当前字符串，与之结合的数字为复制的次数。
     - 字符串创建：`str = "Hello, world!"`
     - 字符串索引：`str[0]`代表 `str` 的第一个字符，  
@@ -159,7 +159,7 @@ Python的常见的数据类型：
     列表截取的语法格式如下：  `变量[头下标:尾下标]`  
     
     索引值以 0 为开始值，-1 为从末尾的开始位置。  
-    ![列表索引示意图](./images/list_index.png)
+    [![列表索引示意图](https://s41.ax1x.com/2026/01/23/pZg8wct.png)](https://imgchr.com/i/pZg8wct)  
     加号 + 是列表连接运算符，星号 * 是重复操作。
 
     - 列表操作：索引、切片、方法、格式化
@@ -406,9 +406,9 @@ Python的常见的数据类型：
     ```
 - 类型转换和数学运算  
     有时候，我们需要对数据内置的类型进行转换，数据类型的转换，一般情况下你只需要将数据类型作为函数名即可。  
-    以下几个内置的函数可以执行数据类型之间的转换。这些函数返回一个新的对象，表示转换的值。
-    ![类型转换](.\images\Type_Conversion.png)
-- 注释
+    以下几个内置的函数可以执行数据类型之间的转换。这些函数返回一个新的对象，表示转换的值。  
+    [![类型转换](https://s41.ax1x.com/2026/01/23/pZg8d1I.png)](https://imgchr.com/i/pZg8d1I)
+- 注释  
     Python 中有多种注释方式，包括单行注释、多行注释。
     - 单行注释：以 # 开头，表示注释内容到行尾。
     - 多行注释：以 ''' 或 """ 开始，以对应的结束符号 ''' 或 """ 结束，表示注释内容到结束符号为止。
@@ -432,9 +432,9 @@ Python的常见的数据类型：
 
 ### 3. 常用函数
 - 数学函数：
-    ![数学函数](.\images\Math_Functions.png)
-- 随机数函数:
-    ![随机数函数](.\images\Random_Functions.png)
+    [![数学函数](https://s41.ax1x.com/2026/01/23/pZg8a9A.png)](https://imgchr.com/i/pZg8a9A)  
+- 随机数函数:  
+    [![随机数函数](https://s41.ax1x.com/2026/01/23/pZg8ttH.png)](https://imgchr.com/i/pZg8ttH)
     ```python
     import random
     # 随机整数
@@ -467,10 +467,10 @@ Python的常见的数据类型：
     randrange(1,100, 2) :  97
     randrange(100) :  42
     ```
-- 三角函数：
-    ![三角函数](.\images\Trigonometric_Functions.png)
-- 数学常量
-    ![数学常量](.\images\Math_Constants.png)
+- 三角函数：  
+    [![三角函数](https://s41.ax1x.com/2026/01/23/pZg8Nhd.png)](https://imgchr.com/i/pZg8Nhd)
+- 数学常量 
+    [![数学常量](https://s41.ax1x.com/2026/01/23/pZg8YAe.png)](https://imgchr.com/i/pZg8YAe)
 ### 3. 控制流
 - 条件判断：if-elif-else，嵌套条件
     Python中if语句的一般形式如下所示：  
