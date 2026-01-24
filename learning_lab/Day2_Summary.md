@@ -570,12 +570,12 @@ Python的常见的数据类型：
 ### 6. 类
     ```python
     class Student:       
-    '''一个普通的类，父类'''
-    def __init__(self,a,b):    # 必须有的函数
-        self.a = int(a)
-        self.b = int(b)
-    def add(self):    # 自定义函数
-        return self.a + self.b
+        '''一个普通的类，父类'''
+        def __init__(self,a,b):    # 必须有的函数
+            self.a = int(a)
+            self.b = int(b)
+        def add(self):    # 自定义函数
+            return self.a + self.b
         
     class Son(Student):    #括号里写父类的类名
         '''子类继承父类'''
