@@ -471,7 +471,7 @@ Python的常见的数据类型：
     [![三角函数](https://s41.ax1x.com/2026/01/23/pZg8Nhd.png)](https://imgchr.com/i/pZg8Nhd)
 - 数学常量 
     [![数学常量](https://s41.ax1x.com/2026/01/23/pZg8YAe.png)](https://imgchr.com/i/pZg8YAe)
-### 3. 控制流
+### 4. 控制流
 - 条件判断：if-elif-else，嵌套条件
     Python中if语句的一般形式如下所示：  
     ```python
@@ -528,12 +528,106 @@ Python的常见的数据类型：
         ```
 - 循环控制：break, continue, else子句
 
-### 4. 函数
+### 5. 函数
 - 函数定义与调用
 - 参数：位置参数、默认参数、可变参数、关键字参数
+    ```python
+    # 位置参数
+    def func(x, y):
+        return x + y
+
+    # 默认参数
+    def func(x, y=10):
+        return x + y
+
+    # 可变参数
+    def func(*args):
+        return sum(args)
+
+    # 关键字参数
+    def func(**kwargs):
+        return kwargs['x'] + kwargs['y']
+    ```
 - 返回值：单个或多个返回值
+    ```python
+    # 单个返回值
+    def func(x, y):
+        return x + y
+
+    # 多个返回值
+    def func(x, y):
+        return x + y, x - y
+    ```
+- 匿名函数：lambda表达式
+    ```python
+    # 匿名函数
+    add = lambda x, y: x + y
+    print(add(1, 2))   # 输出结果：3
+    ```
 - lambda表达式：匿名函数
 - 递归函数：函数调用自身
+
+### 6. 类
+    ```python
+    class Student:       
+    '''一个普通的类，父类'''
+    def __init__(self,a,b):    # 必须有的函数
+        self.a = int(a)
+        self.b = int(b)
+    def add(self):    # 自定义函数
+        return self.a + self.b
+        
+    class Son(Student):    #括号里写父类的类名
+        '''子类继承父类'''
+        def __init__(self,a,b,c,d):
+            self.c = int(c)
+            self.d = int(d)
+            super().__init__(a,b)    # 继承父类的公共变量
+        def add_son(self):
+            return self.a + self.b + self.c + self.d
+            
+    class Qdao:
+        '''掠夺：可以掠夺其他所有类'''
+        def __init__(self,a,b,c,d,e,f):
+            self.e = int(e)
+            self.f = int(f)
+            self.shai = Son(a,b,c,d)    # 掠夺 Son 类的方法
+        def add_qd(self):
+            return self.shai.a + self.shai.b + self.shai.c + self.shai.d + self.e + self.f
+            # 注意：a,b,c,d都是未定义的，是在 shai 这个实例中的，所以要使用就要调取 shai.a,shai.b,shai.c,shai.d
+            
+    a = input("a:")
+    b = input("b:")
+    student = Student(a,b) 
+    print(student.add())
+
+    c = input("c:")
+    d = input("d:")
+    son = Son(a,b,c,d)
+    print(son.add())
+    print(son.add_son())
+
+    e = input("e:")
+    f = input("f:")
+    qdao = Qdao(a,b,c,d,e,f)
+    print(qdao.shai.add())
+    print(qdao.shai.add_son())
+    print(qdao.add_qd())
+
+    # 输出结果：
+    a: 1
+    b: 2
+    3
+    c: 3
+    d: 4
+    3
+    10
+    e: 5
+    f: 6
+    3
+    10
+    21
+    ```
 
 ## 编写的主要代码
 1. `python_foundation.ipynb`：语法学习笔记
